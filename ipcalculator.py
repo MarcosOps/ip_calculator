@@ -17,7 +17,7 @@ def main():
 
 def subnet_calculation():
     ip = input("Enter IP address: ")
-    subnet_mask_str = input("Enter subnet mask (e.g., 255.255.255.0 or /24): ")
+    subnet_mask_str = input("Enter subnet mask (e.g., 255.255.255.0 or 24): ")
 
     try:
         network = ipaddress.IPv4Network(f"{ip}/{subnet_mask_str}", strict=False)
